@@ -23,6 +23,6 @@ from func import input_address
 
 
 os.system('cls')
-print(title)
+print(title)                                                                 
 time.sleep(5)
 input_address()

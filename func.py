@@ -3,7 +3,7 @@ import os
 import time
 from collections import Counter
 
-from message import err_no_address, err_all_site_down, done, waiting_input
+from message import *
 
 
 
@@ -36,8 +36,8 @@ def check_n_print():
     if stat_counter["UNAVAILABLE"] == len(status_col):
         if len(status_col) == 0:
             os.system('cls')
-            count_sec = countdown(5)
-            err_no_address(count_sec)
+            err_no_address()
+            countdown(5)
             input_address()
         else:
             err_all_site_down()
@@ -67,3 +67,4 @@ def countdown(secs):
     for sec in range(secs):
         print(f"\rreturn to previous page in '{(secs+1)-(sec+1)}' sec...", end="")
         time.sleep(1)
+        

@@ -1,13 +1,12 @@
-def err_no_address(count):
+def err_no_address():
     print(f"""
 +-------------------------------------------+
 |                                           |     
 |  ⚠ Error : type at least one address ⚠    |          
 |                                           |
-|   {count}   |
-|                                           |
 +-------------------------------------------+           
     """)
+
 
 def err_all_site_down():
     print("""
@@ -24,6 +23,7 @@ def err_all_site_down():
 +-------------------------------------------------------------------+
     """) 
 
+
 def done():
     print("""
 +-------------------+
@@ -32,6 +32,7 @@ def done():
 |                   |
 +-------------------+
     """)
+
 
 def waiting_input():
     return """
